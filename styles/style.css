@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .site-header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 1rem 0;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url('../assets/images/hero.jpg') center/cover no-repeat;
+    padding: 8rem 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #6f4e37;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #5c3d2e;
+  }
+  
+  .about {
+    padding: 4rem 0;
+    background: #f9f5f2;
+  }
+  
+  .about-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 1 1 300px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6f4e37;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact {
+    padding: 4rem 0;
+    background: #fff;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6f4e37;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    align-self: flex-start;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #5c3d2e;
+  }
+  
+  .form-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d0e9c6;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .form-message.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .footer {
+    background-color: #6f4e37;
+    color: white;
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo h3 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social .social-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Hoverдля ссылок в футере */
+.footer-nav ul li a:hover,
+.footer-social .social-link:hover {
+  color: #f2a900; /* Оранжевый цвет что б выделить */
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Для мобильных устройств с шириной экрана до 320px */
+@media screen and (max-width: 320px) {
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-nav ul {
+      padding: 0;
+    }
+    
+    .footer-nav ul li {
+      margin: 0.5rem 0;
+    }
+    
+    .footer-logo h3 {
+      font-size: 1.5rem;
+    }
+    
+    .footer-social {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .footer-social .social-link {
+      font-size: 1rem;
+    }
+  }
+  
