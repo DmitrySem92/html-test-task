@@ -249,30 +249,30 @@
 
 /* Для мобильных устройств с шириной экрана до 320px */
 @media screen and (max-width: 320px) {
-    .footer-inner {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .footer-nav ul {
-      padding: 0;
-    }
-    
-    .footer-nav ul li {
-      margin: 0.5rem 0;
-    }
-    
-    .footer-logo h3 {
-      font-size: 1.5rem;
-    }
-    
-    .footer-social {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    
-    .footer-social .social-link {
-      font-size: 1rem;
-    }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
   }
   
+  .footer-nav ul {
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-logo h3 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-social {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-social .social-link {
+    font-size: 1rem;
+  }
+}
+
