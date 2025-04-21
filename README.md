@@ -1,0 +1,1 @@
+This is a simple HTML test task project for frontend development.
